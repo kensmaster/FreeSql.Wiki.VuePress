@@ -11,7 +11,7 @@ fsql.Update<object>().AsType(实体类型)
   .SetSource(data)
   .ExecuteAffrows();
 
-fsql.Select<object>().AsType(实体类型)
+fsql.Delete<object>().AsType(实体类型)
   .Where(a => (a as BaseEntity).Id == 1)
   .ExecuteAffrows();
 
